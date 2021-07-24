@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  FirstViewController.swift
 //  All_Repitation_Lesson
 //
 //  Created by Asliddin Mahmudov on 7/24/21.
@@ -7,17 +7,18 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class FirstViewController: UIViewController {
 
     @IBOutlet weak var lbl: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       createNotification()
+
+        createNotification()
     }
 
     @IBAction func buttonPressed(_ sender: Any) {
-        let vc = FirstViewController(nibName: "FirstViewController", bundle: nil)
+        let vc = SecondViewController(nibName: "SecondViewController", bundle: nil)
         present(vc, animated: true, completion: nil)
     }
     
@@ -30,4 +31,3 @@ class ViewController: UIViewController {
     }
     
 }
-
